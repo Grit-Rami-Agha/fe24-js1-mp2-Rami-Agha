@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig - The Dice Game</title>
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #game-play { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Pig - The Dice Game</h1>
+    <h2>Be careful! Don't be too greedy 😉 ...</h2>
+    <!-- Intro Section -->
+    <section id="info-intro">
+        <form id="player-form">
+            <label for="player-name">Enter your name:</label>
+            <input type="text" id="player-name" placeholder="Input player name">
+            <button type="submit">Start Game</button>
+        </form>
+    </section>
+
+    <!-- Game Play Section -->
+    <section id="game-play">
+        <h3>Roll the dice and try your luck! If you roll a 1, you lose your turn score!</h3>
+        <div>
+            <p>Player: <span id="player-display">-</span></p>
+            <p>Total Rolls: <span id="total-rolls">0</span></p>
+            <p>Total Points: <span id="total-points">0</span></p>
+            <p>Turn Points: <span id="turn-points">0</span></p>
+        </div>
+        <div>
+            <button id="roll-dice">Roll the Dice</button>
+            <h2>Dice Roll: <span id="dice-display">🎲</span></h2>
+            
+        </div>
+        <button id="reset-game">Reset Game</button>
+    </section>
+
+    <!-- Reset Section -->
+    <section>
+        <p id="feedback">Good luck! 👼 </p>
+    </section>
+</body>
+</html>
