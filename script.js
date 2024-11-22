@@ -34,7 +34,7 @@ function handlePlayerName(event) {
         introSection.style.display = 'none';
         gamePlaySection.style.display = 'block';
     } else {
-        updateFeedback('Please enter a valid player name to start the game.');
+        updateFeedback('Please enter a valid player name to start the game. 😁 ');
     }
 }
 
